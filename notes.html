@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - EduPlatform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduPlatform</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Study Materials <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="notes.html">Notes</a>
+                        <a href="gate-pyq.html">GATE PYQ</a>
+                        <a href="btech-notes.html">BTech Notes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="videos.html" class="nav-link">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Study Notes</h1>
+            <p>Comprehensive notes for all subjects and courses</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search notes..." id="searchInput">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <select id="subjectFilter">
+                    <option value="">All Subjects</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="electrical">Electrical Engineering</option>
+                    <option value="mechanical">Mechanical Engineering</option>
+                </select>
+                <select id="levelFilter">
+                    <option value="">All Levels</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes Grid -->
+    <section class="notes-section">
+        <div class="container">
+            <div class="notes-grid">
+
+
+
+                <div class="note-card" data-subject="mathematics" data-level="intermediate">
+    <div class="note-icon">
+        <i class="fas fa-calculator"></i>
+    </div>
+    <h3>Calculus Fundamentals</h3>
+    <p>Complete notes on differential and integral calculus with solved examples.</p>
+    <div class="note-meta">
+        <span class="subject">Mathematics</span>
+        <span class="level">Intermediate</span>
+    </div>
+    <div class="note-actions">
+        <!-- PDF link for download -->
+        <a href="Resourses\Calculus.pdf" download>
+            <button class="btn btn-primary">Download PDF</button>
+        </a>
+        
+        <!-- PDF link for preview -->
+        <a href="Resourses\Calculus.pdf" target="_blank">
+            <button class="btn btn-secondary">Preview</button>
+        </a>
+    </div>
+</div>
+<div class="note-card" data-subject="physics" data-level="beginner">
+    <div class="note-icon">
+        <i class="fas fa-atom"></i>
+    </div>
+    <h3>Mechanics Basics</h3>
+    <p>Introduction to classical mechanics, motion, and forces with practical examples.</p>
+    <div class="note-meta">
+        <span class="subject">Physics</span>
+        <span class="level">Beginner</span>
+    </div>
+    <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\Mechanics Basics.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\Mechanics Basics.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+
+
+<div class="note-card" data-subject="physics" data-level="beginner">
+    <div class="note-icon">
+        <i class="fas fa-atom"></i>
+    </div>
+   <h3>Organic Chemistry</h3>
+                    <p>Comprehensive guide to organic compounds, reactions, and mechanisms.</p>
+    <div class="note-meta">
+        <span class="subject">Chemistry</span>
+                        <span class="level">Intermediate</span>
+    </div>
+    <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\Organic chemistry.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\Organic chemistry.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+
+                <div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Advanced concepts in DSA with implementation examples and complexity analysis.</p>
+                    <div class="note-meta">
+                        <span class="subject">Computer Science</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\Data Structure.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\Data Structure.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+                    
+
+                <div class="note-card" data-subject="electrical" data-level="intermediate">
+                    <div class="note-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Circuit Analysis</h3>
+                    <p>Detailed notes on electrical circuits, Kirchhoff's laws, and network theorems.</p>
+                    <div class="note-meta">
+                        <span class="subject">Electrical Engineering</span>
+                        <span class="level">Intermediate</span>
+                    </div>
+                   <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\Circuit Analysis.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\Circuit Analysis.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+<div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3> Python Complete Notes</h3>
+                    <p>Advanced concepts in AI  with implementation examples and complexity analysis.</p>
+                    <div class="note-meta">
+                        <span class="subject">Computer Science</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\PYTHON PROGRAMMING NOTES.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\PYTHON PROGRAMMING NOTES.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+
+<div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3> JAVA Complete Notes</h3>
+                    <p>Advanced concepts in Java  with implementation examples develop applications using Applet,AWT,JDBC and Swings.</p>
+                    <div class="note-meta">
+                        <span class="subject">Computer Science</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\Java Programming.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\Java Programming.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+<div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3> MYSQL  Complete Notes</h3>
+                    <p>MySQL advanced concepts include stored procedures, triggers, views, normalization, indexes, partitioning, replication, sharding, concurrency, transactions, isolation levels, query optimization, JSON support, event scheduler, cursors, and robust security management.</p>
+                    <div class="note-meta">
+                        <span class="subject">Computer Science</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\mySql notes.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\mySql notes.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+<div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>DBMS Complete Notes</h3>
+<p>Advanced concepts in DBMS with implementation examples covering Normalization, Transactions, Concurrency Control, Indexing, Query Optimization, Triggers, Views, and Distributed Databases.</p>
+
+                    <div class="note-meta">
+                        <span class="subject">Computer Science</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\DBMS series part-1.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\DBMS series part-1.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+
+
+<div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C++ Complete Notes</h3>
+<p>Advanced concepts in C++ with implementation examples covering OOPs, Inheritance, Polymorphism, Templates, Exception Handling, File Handling, STL, and Multithreading.</p>
+
+
+                    <div class="note-meta">
+                        <span class="subject">Beginner</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\C++ PW.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\C++ PW.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+
+<div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                   <h3>CSS Complete Notes</h3>
+<p>Advanced concepts in CSS with implementation examples covering Flexbox, Grid, Transitions, Animations, Media Queries, Pseudo-classes, Variables, Responsive Design, and CSS Frameworks.</p>
+
+
+                    <div class="note-meta">
+                        <span class="subject">Beginner</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\CSS Notes.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\CSS Notes.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+
+<div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                   <h3>Artificial Intelligence (AI) Complete Notes</h3>
+<p>Advanced concepts in AI with implementation examples covering Machine Learning, Deep Learning, Neural Networks, Natural Language Processing, Computer Vision, Reinforcement Learning, AI Algorithms, and Expert Systems.</p>
+
+
+
+                    <div class="note-meta">
+                        <span class="subject">Intermediate</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\AI.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\AI.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+
+
+<div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+              <h3>Machine Learning (ML) Complete Notes</h3>
+<p>Advanced concepts in ML with implementation examples covering Supervised Learning, Unsupervised Learning, Regression, Classification, Clustering, Neural Networks, Feature Engineering, Model Evaluation, and Hyperparameter Tuning.</p>
+
+
+
+                    <div class="note-meta">
+                        <span class="subject">Intermediate</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\Machine_Learning.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\Machine_Learning.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+
+<div class="note-card" data-subject="computer-science" data-level="advanced">
+                    <div class="note-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                  <h3>HTML Complete Notes</h3>
+<p>Advanced concepts in HTML with implementation examples covering Semantic Tags, Forms, Media, Canvas, SVG, APIs, Local Storage, Web Components, and Accessibility Features.</p>
+
+
+
+                    <div class="note-meta">
+                        <span class="subject">Beginner</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                     <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\HTML.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\HTML.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+</div>
+
+
+                <div class="note-card" data-subject="mechanical" data-level="beginner">
+                    <div class="note-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Thermodynamics Basics</h3>
+                    <p>Introduction to thermodynamic principles, laws, and applications.</p>
+                    <div class="note-meta">
+                        <span class="subject">Mechanical Engineering</span>
+                        <span class="level">Beginner</span>
+                    </div>
+                   <div class="note-actions">
+        <!-- Download PDF -->
+        <a href="Resourses\Thermodynamics Basics.pdf" class="btn btn-primary" download>Download PDF</a>
+
+        <!-- Preview PDF in new tab -->
+        <a href="Resourses\Thermodynamics Basics.pdf" class="btn btn-secondary" target="_blank">Preview</a>
+    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduPlatform</span>
+                    </div>
+                    <p>Your ultimate learning companion for academic success.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="notes.html">Notes</a></li>
+                        <li><a href="gate-pyq.html">GATE PYQ</a></li>
+                        <li><a href="btech-notes.html">BTech Notes</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@eduplatform.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Education St, Learning City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduPlatform. All rights reserved. | Developed by <a href="https://www.linkedin.com/in/akash-singh-347a8a318/" target="_blank">Akash Singh</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="global-fixes.js"></script>
+    <script src="auth-state.js"></script>
+    <script src="theme-toggle.js"></script>
+</body>
+</html>
+

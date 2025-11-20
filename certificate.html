@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - EduPlatform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduPlatform</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Study Materials <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="notes.html">Notes</a>
+                        <a href="gate-pyq.html">GATE PYQ</a>
+                        <a href="btech-notes.html">BTech Notes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="videos.html" class="nav-link">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link active">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Certificate.html" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Educational Products</h1>
+            <p>Discover our collection of 100+ educational products and resources</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." id="productSearchInput">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="books">Books</option>
+                    <option value="courses">Online Courses</option>
+                    <option value="software">Software</option>
+                    <option value="tools">Study Tools</option>
+                    <option value="test-series">Test Series</option>
+                </select>
+                <select id="priceFilter">
+                    <option value="">All Prices</option>
+                    <option value="free">Free</option>
+                    <option value="under-500">Under ₹500</option>
+                    <option value="500-1000">₹500 - ₹1000</option>
+                    <option value="above-1000">Above ₹1000</option>
+                </select>
+                <select id="ratingFilter">
+                    <option value="">All Ratings</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4+ Stars</option>
+                    <option value="3">3+ Stars</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card featured" data-category="courses" data-price="under-500">
+                    <div class="product-image">
+                        <img src="Images\How-to-prepare-for-GATE-CSIT-2025.webp" alt="Product Image">
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Complete GATE CS Preparation Course</h3>
+                        <p>Comprehensive course covering all GATE CS topics with practice tests.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(4.8) 1,234 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹499</span>
+                            <span class="original-price">₹999</span>
+                            <span class="discount">50% OFF</span>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card featured" data-category="books" data-price="under-500">
+                    <div class="product-image">
+                        <img src="Images\DataStructureHandbook.jpg" alt="Product Image">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Data Structures & Algorithms Handbook</h3>
+                        <p>Complete reference book with examples and practice problems.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(4.2) 567 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹399</span>
+                            <span class="original-price">₹599</span>
+                            <span class="discount">33% OFF</span>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card featured" data-category="test-series" data-price="500-1000">
+                    <div class="product-image">
+                        <img src="Images\GATE-Mock-Test-.gif" alt="Product Image">
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>GATE Mock Test Series 2024</h3>
+                        <p>50+ mock tests with detailed analysis and performance tracking.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(4.9) 2,345 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹799</span>
+                            <span class="original-price">₹1,299</span>
+                            <span class="discount">38% OFF</span>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Products -->
+    <section class="all-products">
+        <div class="container">
+            <h2>All Products (100+)</h2>
+            <div class="products-grid">
+                <!-- Books Category -->
+                <div class="product-card" data-category="books" data-price="under-500">
+                    <div class="product-image">
+                        <img src="Images\maths.jpg" alt="Product Image">
+                    </div>
+                    <div class="product-content">
+                        <h3>Mathematics for Engineers</h3>
+                        <p>Comprehensive mathematics textbook for engineering students.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(4.1) 234 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹450</span>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="software" data-price="free">
+                    <div class="product-image">
+                        <img src="Images\scientific.webp" alt="Product Image">
+                    </div>
+                    <div class="product-content">
+                        <h3>Scientific Calculator Pro</h3>
+                        <p>Advanced calculator app for complex mathematical calculations.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(4.7) 1,567 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Free</span>
+                        </div>
+                        <button class="btn btn-primary">Download</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="courses" data-price="500-1000">
+                    <div class="product-image">
+                        <img src="Images\The Future of AI in Education.jpg" alt="Product Image">
+                    </div>
+                    <div class="product-content">
+                        <h3>Machine Learning Fundamentals</h3>
+                        <p>Learn ML concepts with hands-on projects and real-world examples.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(4.3) 789 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹699</span>
+                            <span class="original-price">₹999</span>
+                            <span class="discount">30% OFF</span>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tools" data-price="under-500">
+                    <div class="product-image">
+                        <img src="Images\How-to-prepare-for-GATE-CSIT-2025.webp" alt="Product Image">
+                    </div>
+                    <div class="product-content">
+                        <h3>Study Planner & Tracker</h3>
+                        <p>Digital planner to organize your study schedule and track progress.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(4.0) 345 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹299</span>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="books" data-price="500-1000">
+                    <div class="product-image">
+                        <img src="Images\How to Create an Effective Study Schedule.webp" alt="Product Image">
+                    </div>
+                    <div class="product-content">
+                        <h3>Physics Problem Solver</h3>
+                        <p>Collection of solved physics problems with step-by-step solutions.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(4.6) 456 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹599</span>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="test-series" data-price="under-500">
+                    <div class="product-image">
+                        <img src="Images\jee text series.jpg" alt="Product Image">
+                    </div>
+                    <div class="product-content">
+                        <h3>JEE Main Practice Tests</h3>
+                        <p>25 practice tests for JEE Main with detailed explanations.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(4.2) 678 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹399</span>
+                            <span class="original-price">₹599</span>
+                            <span class="discount">33% OFF</span>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button class="btn btn-secondary">Load More Products</button>
+                <p>Showing 9 of 100+ products</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduPlatform</span>
+                    </div>
+                    <p>Your ultimate learning companion for academic success.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="notes.html">Notes</a></li>
+                        <li><a href="gate-pyq.html">GATE PYQ</a></li>
+                        <li><a href="btech-notes.html">BTech Notes</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@eduplatform.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i>117/K/87, Sarvodaya Nagar Road, Sarvodaya Nagar, Kanpur, Uttar Pradesh 208005</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduPlatform. All rights reserved. | Developed by <a href="https://www.linkedin.com/in/akash-singh-347a8a318/" target="_blank">Akash Singh</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="theme-toggle.js"></script>
+</body>
+</html>
+

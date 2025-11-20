@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Lectures - EduPlatform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduPlatform</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Study Materials <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="notes.html">Notes</a>
+                        <a href="gate-pyq.html">GATE PYQ</a>
+                        <a href="btech-notes.html">BTech Notes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="videos.html" class="nav-link active">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Video Lectures</h1>
+            <p>High-quality educational videos from expert instructors</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search videos..." id="videoSearchInput">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="gate-prep">GATE Preparation</option>
+                </select>
+                <select id="durationFilter">
+                    <option value="">All Durations</option>
+                    <option value="short">Short (< 10 min)</option>
+                    <option value="medium">Medium (10-30 min)</option>
+                    <option value="long">Long (> 30 min)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video -->
+    <section class="featured-video">
+        <div class="container">
+            <h2>Featured Video</h2>
+            <div class="video-player">
+
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/MdG0Vw9f1A4?si=sr-RXosYcspoRlg9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>Introduction to Data Structures and Algorithms</h3>
+                    <p>A comprehensive introduction to fundamental concepts in computer science.</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-eye"></i> 125K views</span>
+                        <span><i class="fas fa-clock"></i> 45 minutes</span>
+                        <span><i class="fas fa-thumbs-up"></i> 3.2K likes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Grid -->
+    <section class="videos-section">
+        <div class="container">
+            <h2>All Video Lectures</h2>
+<div class="videos-grid">
+  <div class="video-card" data-category="mathematics" data-duration="medium">
+    <div class="video-thumbnail">
+      <iframe width="100%" height="500" 
+        src="https://www.youtube.com/embed/bQ_B9cHBYfQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="video-content">
+      <h3>Calculus - Limits and Derivatives</h3>
+      <p>Understanding the fundamental concepts of calculus with practical examples.</p>
+      <div class="video-meta">
+        <span><i class="fas fa-eye"></i> 45K views</span>
+        <span><i class="fas fa-calendar"></i> 2 days ago</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="video-card" data-category="physics" data-duration="long">
+    <div class="video-thumbnail">
+        <iframe width="100%" height="500" 
+            src="https://www.youtube.com/embed/hyctIDPRSqY" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="video-content">
+        <h3>Quantum Mechanics Basics</h3>
+        <p>Introduction to quantum mechanics principles and wave functions.</p>
+        <div class="video-meta">
+            <span><i class="fas fa-eye"></i> 32K views</span>
+            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+        </div>
+    </div>
+</div>
+
+
+                <div class="video-card" data-category="computer-science" data-duration="medium">
+                    <div class="video-thumbnail">
+                        <iframe  width="100%" height="500" 
+                        src="https://www.youtube.com/embed/aaHL0KygWqE?si=nMYNg2NLH-tjGl6K"
+                         title="YouTube video player" 
+                         frameborder="0" 
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                         referrerpolicy="strict-origin-when-cross-origin" 
+                         allowfullscreen>
+                        </iframe>
+                       
+                    </div>
+                    <div class="video-content">
+                        <h3>Binary Search Algorithm</h3>
+                        <p>Step-by-step explanation of binary search with implementation.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 67K views</span>
+                            <span><i class="fas fa-calendar"></i> 3 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="chemistry" data-duration="short">
+                    <div class="video-thumbnail">
+                       <iframe width="100%" height="500"  src="https://www.youtube.com/embed/BGNQNaeUGQc?si=LRALNR75h09NMrFC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+                    <div class="video-content">
+                        <h3>Chemical Bonding Explained</h3>
+                        <p>Quick overview of ionic, covalent, and metallic bonding.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 28K views</span>
+                            <span><i class="fas fa-calendar"></i> 5 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="gate-prep" data-duration="long">
+                    <div class="video-thumbnail">
+                       <iframe width="100%" height="500" src="https://www.youtube.com/embed/HdoLnexrm3k?si=nUCPnEr2c8a0Kiul" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+                    <div class="video-content">
+                        <h3>GATE CS Previous Year Solutions</h3>
+                        <p>Detailed solutions to GATE Computer Science previous year questions.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 89K views</span>
+                            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                 <div class="video-card" data-category="computer-science" data-duration="long">
+                    <div class="video-thumbnail">
+                       <iframe width="100%" height="500"src="https://www.youtube.com/embed/xTtL8E4LzTQ?si=Yz0AanhWnx-jLCcH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+                    <div class="video-content">
+                        <h3>Java tutorial for beginners full course 2025 </h3>
+                    <p>A comprehensive introduction to fundamental concepts in computer science.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 89K views</span>
+                            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="video-card" data-category="computer-science" data-duration="long">
+                    <div class="video-thumbnail">
+                       <iframe width="100%" height="500" src="https://www.youtube.com/embed/UrsmFxEIp5k?si=OlJy1bZ2FkspjA9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+                    <div class="video-content">
+                        <h3>Python Tutorial For Beginners in Hindi | Complete Python Course 🔥 </h3>
+                    <p>A comprehensive introduction to fundamental concepts in computer science.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 89K views</span>
+                            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                 <div class="video-card" data-category="computer-science" data-duration="long">
+                    <div class="video-thumbnail">
+                       <iframe width="100%" height="550"  src="https://www.youtube.com/embed/k2DSi1zGEc8?si=vQkx0KJE-c5r1kQ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-content">
+                        <h3>HTML Full Course (in Hindi)🔥 </h3>
+                    <p>A comprehensive introduction to fundamental concepts in computer science.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 89K views</span>
+                            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                 <div class="video-card" data-category="computer-science" data-duration="long">
+                    <div class="video-thumbnail">
+                       <iframe  width="100%" height="550" src="https://www.youtube.com/embed/OpWjt_wbV4E?si=QK0Rxh8YSlmaHnVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-content">
+                        <h3>🚀 🔥 CSS Complete Course (2024) for Beginners | Myntra Project | Notes | GitHub | Certification </h3>
+                    <p>A comprehensive introduction to fundamental concepts in computer science.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 89K views</span>
+                            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="video-card" data-category="computer-science" data-duration="long">
+                    <div class="video-thumbnail">
+                       <iframe width="100%" height="550"  src="https://www.youtube.com/embed/aZb0iu4uGwA?si=yaDbi_GwAOF6UDjq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-content">
+                        <h3>C Language Tutorial for Beginners (With Notes + Surprise) 🔥 </h3>
+                    <p>A comprehensive introduction to fundamental concepts in computer science.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 89K views</span>
+                            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                
+
+                <div class="video-card" data-category="engineering" data-duration="medium">
+                    <div class="video-thumbnail">
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/pHNbm-4reIc?si=HsVrZJlwF2HLLxzh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+                    <div class="video-content">
+                        <h3>Circuit Analysis Techniques</h3>
+                        <p>Learn various methods for analyzing electrical circuits.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 41K views</span>
+                            <span><i class="fas fa-calendar"></i> 4 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playlists Section -->
+    <section class="playlists-section">
+        <div class="container">
+            <h2>Popular Playlists</h2>
+            <div class="playlists-grid">
+
+
+                <div class="playlist-card">
+    <a href="https://www.youtube.com/playlist?list=PLynLXReWAxdElXlBKOfqenSJw3Sh_77de" target="_blank">
+        <div class="playlist-thumbnail">
+            <img src="Images\operatingSystem.webp" alt="Playlist Thumbnail">
+            <div class="playlist-count">
+                <i class="fas fa-list"></i>
+                <span>25 videos</span>
+            </div>
+        </div>
+    </a>
+    <div class="playlist-content">
+        <h3>
+            <a href="https://www.youtube.com/playlist?list=PLynLXReWAxdElXlBKOfqenSJw3Sh_77de" target="_blank">
+                GATE 2025 Exam |  Complete Operating Systems Course
+            </a>
+        </h3>
+        <p>Comprehensive playlist covering all data structures concepts.</p>
+        <span class="playlist-duration">Total: 48 hours +++</span>
+    </div>
+</div>
+
+
+
+
+
+                <div class="playlist-card">
+    <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt" target="_blank">
+        <div class="playlist-thumbnail">
+            <img src="Images\OIP.webp" alt="Playlist Thumbnail">
+            <div class="playlist-count">
+                <i class="fas fa-list"></i>
+                <span>25 videos</span>
+            </div>
+        </div>
+    </a>
+    <div class="playlist-content">
+        <h3>
+            <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt" target="_blank">
+                GATE 2025 Exam | Complete Data Structures Course
+            </a>
+        </h3>
+        <p>Comprehensive playlist covering all data structures concepts.</p>
+        <span class="playlist-duration">Total: 48 hours +++</span>
+    </div>
+</div>
+
+
+
+                <div class="playlist-card">
+    <a href="https://www.youtube.com/playlist?list=PLCRkxr-xpkfYeSoxm7BurehfXvgodtkR3" target="_blank">
+        <div class="playlist-thumbnail">
+            <img src="Images\maths.jpg" alt="Playlist Thumbnail">
+            <div class="playlist-count">
+                <i class="fas fa-list"></i>
+                <span>25 videos</span>
+            </div>
+        </div>
+    </a>
+    <div class="playlist-content">
+        <h3>
+            <a href="https://www.youtube.com/playlist?list=PLCRkxr-xpkfYeSoxm7BurehfXvgodtkR3" target="_blank">
+                 Complete GATE Mathematics Preparation
+            </a>
+        </h3>
+        <p>Complete mathematics preparation for GATE examination.</p>
+        <span class="playlist-duration">Total: 48 hours +++</span>
+    </div>
+</div>
+
+
+ <div class="playlist-card">
+    <a href="https://www.youtube.com/playlist?list=PLvTTv60o7qj_ZT2pXjgXxue0AlgkpH0ZO" target="_blank">
+        <div class="playlist-thumbnail">
+            <img src="Images\apptitude.jpg" alt="Playlist Thumbnail">
+            <div class="playlist-count">
+                <i class="fas fa-list"></i>
+                <span>25 videos</span>
+            </div>
+        </div>
+    </a>
+    <div class="playlist-content">
+        <h3>
+            <a href="https://www.youtube.com/playlist?list=PLvTTv60o7qj_ZT2pXjgXxue0AlgkpH0ZO" target="_blank">
+                 General Aptitude : GATE 2024 All Branches
+            </a>
+        </h3>
+        <p>Complete General Aptitude preparation for GATE examination and Placements .</p>
+        <span class="playlist-duration">Total: 48 hours +++</span>
+    </div>
+</div>
+
+
+
+
+
+ <div class="playlist-card">
+    <a href="https://www.youtube.com/playlist?list=PLPvaSRcEQh4kfVIyezAQu9Mvj5FBk_OEN" target="_blank">
+        <div class="playlist-thumbnail">
+            <img src="Images\DBMS.jpg" alt="Playlist Thumbnail">
+            <div class="playlist-count">
+                <i class="fas fa-list"></i>
+                <span>25 videos</span>
+            </div>
+        </div>
+    </a>
+    <div class="playlist-content">
+        <h3>
+            <a href="https://www.youtube.com/playlist?list=PLPvaSRcEQh4kfVIyezAQu9Mvj5FBk_OEN" target="_blank">
+                 Database Management System | CS & IT | GATE 2024
+            </a>
+        </h3>
+        <p>Complete Database Management System preparation for GATE examination and Placements .</p>
+        <span class="playlist-duration">Total: 48 hours +++</span>
+    </div>
+</div>
+
+
+
+
+ <div class="playlist-card">
+    <a href="https://www.youtube.com/playlist?list=PL3eEXnCBViH_ePbZWc1nKZuyfru6sgioD" target="_blank">
+        <div class="playlist-thumbnail">
+            <img src="Images\TOC.jpg" alt="Playlist Thumbnail">
+            <div class="playlist-count">
+                <i class="fas fa-list"></i>
+                <span>25 videos</span>
+            </div>
+        </div>
+    </a>
+    <div class="playlist-content">
+        <h3>
+            <a href="https://www.youtube.com/playlist?list=PL3eEXnCBViH_ePbZWc1nKZuyfru6sgioD" target="_blank">
+                 Theory Of Computation: CS & IT | GATE Course
+            </a>
+        </h3>
+        <p>CompleteTheory Of Computation preparation for GATE examination and Placements .</p>
+        <span class="playlist-duration">Total: 48 hours +++</span>
+    </div>
+</div>
+
+
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduPlatform</span>
+                    </div>
+                    <p>Your ultimate learning companion for academic success.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="notes.html">Notes</a></li>
+                        <li><a href="gate-pyq.html">GATE PYQ</a></li>
+                        <li><a href="btech-notes.html">BTech Notes</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@eduplatform.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 117/K/87, Sarvodaya Nagar Road, Sarvodaya Nagar, Kanpur, Uttar Pradesh 208005</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduPlatform. All rights reserved. | Developed by <a href="https://www.linkedin.com/in/akash-singh-347a8a318/" target="_blank">Akash Singh</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="theme-toggle.js"></script>
+</body>
+</html>
+

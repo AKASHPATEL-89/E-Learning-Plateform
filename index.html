@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlatform - Your Learning Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue"
+      crossorigin="anonymous"
+    />
+<style>
+    
+.nav-link:hover,
+.nav-link.active {
+    color: #667eea;
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+}
+
+
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.nav-logo i {
+    margin-right: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 1rem;
+    
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #667eea;
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduPlatform</span>
+                
+                
+
+
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Study Materials <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="notes.html">Notes</a>
+                        <a href="gate-pyq.html">GATE PYQ</a>
+                        <a href="btech-notes.html">BTech Notes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="videos.html" class="nav-link">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link active">Products</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html?admin=true" class="nav-link">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+     <div id="carouselExampleDark" class="carousel carousel-dark slide" style="opacity: 0; transition: opacity 0.5s ease;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="Images/Teach.jpg" style="width:100%; height:600px; object-fit:cover;" class="d-block w-100" alt="Effective Study Techniques">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Effective Study Techniques for GATE Preparation</h3>
+        <p  style="color: white;">To effectively prepare for GATE 2026, start early, create a structured study plan, and focus on understanding the syllabus and exam pattern..</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="Images/AI-in-Education.webp" style="width:100%; height:600px; object-fit:cover;" class="d-block w-100" alt="AI in Education">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>The Future of AI in Education</h3>
+        <p style="color: white;">
+  AI is set to revolutionize education by enabling personalized learning experiences, 
+  automating administrative tasks, and reshaping the roles of educators and learners.
+</p>
+
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/teacher.jpg" style="width:100%; height:600px; object-fit:cover;" class="d-block w-100" alt="GATE ECE Preparation">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Last Minute Preparation Tips for GATE ECE</h3>
+        <p  style="color: white;">During the last few days before GATE ECE, do proper revision, go through high weightage topics of the GATE ECE syllabus, improve your time management skills and solve previous year papers and mock tests.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Your Ultimate Learning Platform</h1>
+                <p>Access comprehensive study materials, GATE PYQs, BTech notes, video lectures, and 100+ educational products all in one place.</p>
+                <div class="hero-buttons">
+                    <a href="login.html" class="btn btn-primary">Get Started</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-book-open"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose EduPlatform?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Comprehensive Notes</h3>
+                    <p>Access detailed notes for all subjects and courses, organized by topics and difficulty levels.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>GATE PYQs</h3>
+                    <p>Previous year questions with detailed solutions to help you prepare for competitive exams.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>Video Lectures</h3>
+                    <p>High-quality video content from expert educators to enhance your learning experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>BTech Resources</h3>
+                    <p>Complete semester-wise notes and materials for all BTech branches and specializations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>100+ Products</h3>
+                    <p>Wide range of educational products including books, courses, and study materials.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access your learning materials anytime, anywhere with our responsive design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>10,000+</h3>
+                    <p>Students</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Courses</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100+</h3>
+                    <p>Products</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Universities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Learning?</h2>
+            <p>Join thousands of students who are already using EduPlatform to achieve their academic goals.</p>
+            <a href="login.html" class="btn btn-primary">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduPlatform</span>
+                    </div>
+                    <p>Your ultimate learning companion for academic success.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="notes.html">Notes</a></li>
+                        <li><a href="gate-pyq.html">GATE PYQ</a></li>
+                        <li><a href="btech-notes.html">BTech Notes</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@eduplatform.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 117/K/87, Sarvodaya Nagar Road, Sarvodaya Nagar, Kanpur, Uttar Pradesh 208005</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduPlatform. All rights reserved. | Developed by <a href="https://www.linkedin.com/in/akash-singh-347a8a318/" target="_blank">Akash Singh</a></p>
+            </div>
+        </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script1.js"></script>
+    <script src="global-fixes.js"></script>
+    <script src="auth-state.js"></script>
+    <script src="theme-toggle.js"></script>
+    <script>
+        // Fix scroll loading and add animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Animate elements on scroll
+            const animateElements = document.querySelectorAll('.feature-card, .stat-item, .hero-content, .hero-image');
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease';
+                observer.observe(el);
+            });
+            
+            // Fix carousel loading
+            setTimeout(() => {
+                const carousel = document.querySelector('.carousel');
+                if (carousel) {
+                    carousel.style.opacity = '1';
+                }
+            }, 100);
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

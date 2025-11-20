@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - EduPlatform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduPlatform</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Study Materials <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="notes.html">Notes</a>
+                        <a href="gate-pyq.html">GATE PYQ</a>
+                        <a href="btech-notes.html">BTech Notes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="videos.html" class="nav-link">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>EduPlatform Blog</h1>
+            <p>Latest insights, tips, and updates from the world of education</p>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="Images\10 Effective Study Techniques for GATE Preparation.jpg" alt="Featured Post">
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-text">
+                    <div class="post-meta">
+                        <span class="category">Study Tips</span>
+                        <span class="date">December 15, 2024</span>
+                    </div>
+                    <h2>10 Effective Study Techniques for GATE Preparation</h2>
+                    <p>Discover proven study techniques that can help you excel in your GATE preparation. From time management to effective note-taking, learn the strategies that top performers use.</p>
+                    <a href="https://www.youtube.com/live/xAiqAbGtxYw?si=KOBYejKiC1VDrpeF" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Categories -->
+    <section class="blog-filter">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search blog posts..." id="blogSearchInput">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="category-tags">
+                <button class="tag active" data-category="all">All</button>
+                <button class="tag" data-category="study-tips">Study Tips</button>
+                <button class="tag" data-category="career-guidance">Career Guidance</button>
+                <button class="tag" data-category="technology">Technology</button>
+                <button class="tag" data-category="exam-prep">Exam Prep</button>
+                <button class="tag" data-category="student-life">Student Life</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid">
+                <article class="blog-card" data-category="career-guidance">
+                    <div class="blog-image">
+                        <img src="Images\Career_Opportunities_after_BTech.jpg" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="category">Career Guidance</span>
+                            <span class="date">December 12, 2024</span>
+                        </div>
+                        <h3>Top Career Opportunities After BTech in Computer Science</h3>
+                        <p>Explore the diverse career paths available for computer science graduates and learn about the skills required for each field.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="Images\Dr. Sarah Johnson.webp" alt="Author">
+                                <span>Dr. Sarah Johnson</span>
+                            </div>
+                            <a href="https://youtu.be/JJjBPBWaeYU?si=igZJWRggvmdwF3IA" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="study-tips">
+                    <div class="blog-image">
+                        <img src="Images\How to Create an Effective Study Schedule.webp" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="category">Study Tips</span>
+                            <span class="date">December 10, 2024</span>
+                        </div>
+                        <h3>How to Create an Effective Study Schedule</h3>
+                        <p>Learn how to plan your study time efficiently and maintain consistency in your learning routine.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="Images\Prof. Michael Chen.webp" alt="Author">
+                                <span>Prof. Michael Chen</span>
+                            </div>
+                            <a href="https://youtu.be/owyESIkhNqA?si=lOIGqO_ZhSOxqKOT" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="technology">
+                    <div class="blog-image">
+                        <img src="Images\The Future of AI in Education.jpg" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="category">Technology</span>
+                            <span class="date">December 8, 2024</span>
+                        </div>
+                        <h3>The Future of AI in Education</h3>
+                        <p>Discover how artificial intelligence is transforming the educational landscape and what it means for students.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="Images\Emily Rodriguez.webp" alt="Author">
+                                <span>Emily Rodriguez</span>
+                            </div>
+                            <a href="https://youtu.be/RyKRcpRSQus?si=Gf548mj_kqw0qPib" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="exam-prep">
+                    <div class="blog-image">
+                        <img src="Images\Last_Minute_Preparation_Tips_for_GATE_ECE_1.avif" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="category">Exam Prep</span>
+                            <span class="date">December 5, 2024</span>
+                        </div>
+                        <h3>Last-Minute GATE Preparation Tips</h3>
+                        <p>Essential strategies for maximizing your performance in the final weeks before the GATE exam.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="Images\David Kumar.webp" alt="Author">
+                                <span>David Kumar</span>
+                            </div>
+                            <a href="https://www.youtube.com/live/4_ccH31PAHY?si=gAEv2N086L55ryXE" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="student-life">
+                    <div class="blog-image">
+                        <img src="Images\Maintaining Work-Life Balance as a Student.webp" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="category">Student Life</span>
+                            <span class="date">December 3, 2024</span>
+                        </div>
+                        <h3>Maintaining Work-Life Balance as a Student</h3>
+                        <p>Tips for managing academic responsibilities while maintaining personal well-being and social connections.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="Images\David Kumar.webp" alt="Author">
+                                <span>Dr. Sarah Johnson</span>
+                            </div>
+                            <a href="https://youtu.be/11BVjpx2Lmw?si=b0_tjIMkDIwwJctV" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="technology">
+                    <div class="blog-image">
+                        <img src="Images\Best Programming Languages to Learn in 2024.webp" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="category">Technology</span>
+                            <span class="date">December 1, 2024</span>
+                        </div>
+                        <h3>Best Programming Languages to Learn in 2024</h3>
+                        <p>A comprehensive guide to the most in-demand programming languages and their career prospects.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="Images\Anita Singh.webp" alt="Author">
+                                <span>David Kumar</span>
+                            </div>
+                            <a href="https://youtu.be/kJOqIaGwQ7Y?si=yTnhGTLMJ2WU3q7O" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">...</button>
+                <button class="page-btn">10</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to get the latest blog posts and educational insights delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduPlatform</span>
+                    </div>
+                    <p>Your ultimate learning companion for academic success.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="notes.html">Notes</a></li>
+                        <li><a href="gate-pyq.html">GATE PYQ</a></li>
+                        <li><a href="btech-notes.html">BTech Notes</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@eduplatform.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 117/K/87, Sarvodaya Nagar Road, Sarvodaya Nagar, Kanpur, Uttar Pradesh 208005</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduPlatform. All rights reserved. | Developed by <a href="https://www.linkedin.com/in/akash-singh-347a8a318/" target="_blank">Akash Singh</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="theme-toggle.js"></script>
+</body>
+</html>
+
